@@ -1,5 +1,7 @@
 /*
 Documentation:
+This function follows the following specification
+https://csrc.nist.gov/files/pubs/fips/197/final/docs/fips-197.pdf
 
 
 function AES256:

@@ -28,5 +28,7 @@ function AES256(
   isDecypherMode
 )
 {
+  let state;
+  // AES defined functions and constants:
   
 }

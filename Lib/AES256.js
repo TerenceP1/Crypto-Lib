@@ -30,5 +30,5 @@ function AES256(
 {
   let state; // The state is a 4x4 array of bytes
   // AES defined functions and constants:
-  
+  let Sbox = [];
 }

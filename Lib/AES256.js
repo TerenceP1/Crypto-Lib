@@ -287,4 +287,12 @@ function AES256(
     0xbb,
     0x16
   ];
+  let iSbox = [];
+  // Generate inverse s-box
+  for (let i = 0;i < 256;i++) {
+    iSbox.push(0);
+  }
+  for (let i = 0;i < 256;i++) {
+    iSbox[Sbox[i]] = i;
+  }
 }

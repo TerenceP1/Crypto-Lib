@@ -295,4 +295,11 @@ function AES256(
   for (let i = 0;i < 256;i++) {
     iSbox[Sbox[i]] = i;
   }
+  function SubBytes(arr) {
+    for (let i = 0;i < 4;i++) {
+      for (let j = 0;j < 4;j++) {
+        arr[i][j] = Sbox[arr[i][j];
+      }
+    }
+  }
 }

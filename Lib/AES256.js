@@ -309,5 +309,15 @@ function AES256(
       [0, 0, 0, 0],
       [0, 0, 0, 0]
     ];
+    for (let i = 0;i < 4;i++) {
+      for (let j = 0;j < 4;j++) {
+        nw[i][(i + j) % 4] = arr[i][j];
+      }
+    }
+    for (let i = 0;i < 4;i++) {
+      for (let j = 0;j < 4;j++) {
+        arr[i][j] = nw[i][j];
+      }
+    }
   }
 }

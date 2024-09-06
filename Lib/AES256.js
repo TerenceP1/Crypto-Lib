@@ -302,4 +302,12 @@ function AES256(
       }
     }
   }
+  function ShiftRows(arr) {
+    let nw = [
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0]
+    ];
+  }
 }

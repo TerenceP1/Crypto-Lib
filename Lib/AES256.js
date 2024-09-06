@@ -333,5 +333,11 @@ function AES256(
         cols[i][j] = arr[j][i];
       }
     }
+    // Do the mixcolunms operation
+    let a = [2, 1, 1, 3]; // Represents a polynomial
+    // Representation of a polynomial:
+    // Value at ith index represents the coefficient of x^i
+    let md = [1, 0, 0, 0, 1]; // The polynomial to mod by
+    
   }
 }

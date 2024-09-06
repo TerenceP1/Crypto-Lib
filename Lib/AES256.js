@@ -320,4 +320,8 @@ function AES256(
       }
     }
   }
+  function MixColumns(arr) {
+    // Convert array to list of columns
+    let cols = [];
+  }
 }

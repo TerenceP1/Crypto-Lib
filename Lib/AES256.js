@@ -322,6 +322,16 @@ function AES256(
   }
   function MixColumns(arr) {
     // Convert array to list of columns
-    let cols = [];
+    let cols = [
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0]
+    ];
+    for (let i = 0;i < 4;i++) {
+      for (let j = 0;j < 4;j++) {
+        cols[i][j] = arr[j][i];
+      }
+    }
   }
 }

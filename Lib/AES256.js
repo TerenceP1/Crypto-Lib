@@ -337,7 +337,13 @@ function AES256(
     let a = [2, 1, 1, 3]; // Represents a polynomial
     // Representation of a polynomial:
     // Value at ith index represents the coefficient of x^i
-    let md = [1, 0, 0, 0, 1]; // The polynomial to mod by
-    
+    for (let i = 0;i < 4;i++) {
+      let cCol = cols[i];
+      let mlt = [0, 0, 0, 0, 0, 0]; // Result of polynomial multiplication
+      // Polynomial multiplication:
+      for (let j = 0;j < 4;j++) {
+        //for (let k = 0;k 
+      }
+    }
   }
 }

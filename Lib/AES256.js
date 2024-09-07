@@ -342,7 +342,10 @@ function AES256(
       let mlt = [0, 0, 0, 0, 0, 0]; // Result of polynomial multiplication
       // Polynomial multiplication:
       for (let j = 0;j < 4;j++) {
-        //for (let k = 0;k 
+        for (let k = 0;k < 4;k++) {
+          mlt[j + k] += cCol[j] * a[k];
+          mlt[j + k] %= 256;
+        }
       }
     }
   }

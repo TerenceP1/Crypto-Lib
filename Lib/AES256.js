@@ -347,6 +347,15 @@ function AES256(
           mlt[j + k] %= 256;
         }
       }
+      // Divide the polynomial by x^4+1:
+      for (let j = 5;j > 3;j--) {
+        mlt[j - 4] -= mlt[j];
+        mlt[j] = 0;
+        mlt[j - 4] %= 256;
+        if (mlt[j - 4] < 0) {
+          mlt[j - 4] += 256;
+        }
+      }
     }
   }
 }

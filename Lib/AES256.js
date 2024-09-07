@@ -298,7 +298,7 @@ function AES256(
   function SubBytes(arr) {
     for (let i = 0;i < 4;i++) {
       for (let j = 0;j < 4;j++) {
-        arr[i][j] = Sbox[arr[i][j];
+        arr[i][j] = Sbox[arr[i][j]];
       }
     }
   }

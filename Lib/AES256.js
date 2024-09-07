@@ -356,6 +356,10 @@ function AES256(
           mlt[j - 4] += 256;
         }
       }
+      // Store the result in cols:
+      for (let j = 0;j < 4;j++) {
+        cols[i][j] = mlt[j];
+      }
     }
   }
 }
